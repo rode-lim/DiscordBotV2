@@ -7,7 +7,7 @@ STD_BOTS   = blabla
 BOTS += $(STD_BOTS)
 
 CFLAGS  += -O0 -g -pthread -Wall \
-           -ldiscord --static /usr/local/lib/libdiscord.a
+           -ldiscord
 LDLIBS   = -ldiscord -lcurl
 
 all: $(BOTS)
@@ -17,6 +17,6 @@ echo:
     @ echo -e 'STD_BOTS: $(STD_BOTS)\n'
 
 clean:
-    @ rm -f $(STD_BOTS)
+	@ rm -f $(STD_BOTS)
 
 .PHONY: all echo clean

@@ -9,7 +9,7 @@
 
 char *ft_get_random_text(char **text)
 {
-    const char *messages[] = { "Breathe Oxygen", "Fight a Goblin", "Dance G" };
+    const char *messages[] = { "Breathe Oxygen", "Fight a Goblin", "Dance G", "<t:1735084800>"};
     size_t num_messages = sizeof(messages) / sizeof(messages[0]);
 
     srand(time(NULL));
@@ -46,7 +46,7 @@ int    main(void)
 {
     struct discord    *client;
     ccord_global_init();
-    client = discord_init("YOUR_BOT_TOKEN");
+    client = discord_init("YOUR BOT TOKEN");
 
     discord_set_on_ready(client, &on_ready);
 
