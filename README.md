@@ -26,20 +26,24 @@ A simple Discord bot with several useful commands to assist users in navigating 
 
 ### Example Usage:
 
-## Installation
+
+## Installation (Ubuntu/Linux)
 
 1. Clone the repository:
     ```bash
     git clone https://github.com/yourusername/discord-bot.git
     ```
-2. Install dependencies:
+2. Build the project:
     ```bash
-    npm install
+    make
     ```
-3. Set up the bot configuration by editing the `.env` file with your bot token and other necessary details.
-4. Start the bot:
+3. Run the bot:
     ```bash
-    npm start
+    ./bot
+    ```
+4. (Optional) Clean up build artifacts:
+    ```bash
+    make clean
     ```
 
 ## Contributing
@@ -49,3 +53,4 @@ Feel free to open issues or submit pull requests if you'd like to improve the bo
 ## License
 
 This project is licensed under the [MIT License](LICENSE).
+
