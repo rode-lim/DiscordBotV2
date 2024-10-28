@@ -20,7 +20,7 @@ int	main(void)
 {
 	struct discord	*client;
 	ccord_global_init();
-	client = discord_init("YOUR BOT TOKEN");
+	client = discord_init("YOUR BOT TOKEN!");
 
 	discord_set_on_ready(client, &on_ready);
 

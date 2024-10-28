@@ -27,7 +27,7 @@ void	ft_rules_print(struct discord *client, const struct discord_message *event)
 void	ft_deadline_print(struct discord *client, const struct discord_message *event)
 {
 	char	*text;
-	text = "<t:1735084800>";
+	text = "The current Deadline has expired. Please wait for the next event to be announced.";
 	struct discord_create_message params = { .content = text };
 	discord_create_message(client, event->channel_id, &params, NULL);
 }
